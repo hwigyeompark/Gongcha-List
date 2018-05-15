@@ -7,3 +7,4 @@ class GongchaList extends Component{
         );
     }
 }
+export default GongchaList;
