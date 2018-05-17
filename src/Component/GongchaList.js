@@ -29,7 +29,7 @@ class GongchaItem extends Component{
                 backgroundImage : `url(${this.props.pic})`,
                 backgroundSize : 'contain',
                 backgroundRepeat : 'no-repeat',
-                borderRadius:'50%'
+                margin:'0 auto'
             },
             align : {
                 fontSize : '1.2em',
@@ -41,7 +41,7 @@ class GongchaItem extends Component{
           <div style={styles.container}>
               <div style={styles.picStyle} />
               <div style={styles.align}>
-                  <div style={{fontSize:'1.5em'}}>Name : {this.props.name}</div>
+                  <div style={{fontSize:'1.2em'}}>Name : {this.props.name}</div>
                   <div>Price : {this.props.price}</div>
               </div>
           </div>
@@ -54,32 +54,32 @@ class GongchaList extends Component{
             {
                 name:'망고 쥬얼리 밀크티',
                 price : '5.1',
-                pic: {img1}
+                pic: img1
             },
             {
                 name:'망고 밀크 요거티',
                 price : '5.1',
-                pic: {img2}
+                pic: img2
             },
             {
                 name:'딸기 쿠키 스무디',
                 price : '5.3',
-                pic: {img3}
+                pic: img3
             },
             {
                 name:'딸기 얼그레이 티라떼',
                 price : '4.5',
-                pic: {img4}
+                pic: img4
             },
             {
                 name:'초코 쿠앤크 스무디',
                 price : '4.5',
-                pic: {img5}
+                pic: img5
             },
             {
                 name:'청포도 스무디',
                 price : '4.8',
-                pic: {img6}
+                pic: img6
             }
         ];
         return(
