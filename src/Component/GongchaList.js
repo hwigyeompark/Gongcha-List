@@ -7,7 +7,7 @@ import img5 from "../img/5.jpg";
 import img6 from "../img/6.jpg";
 
 
-class GongchaList extends Component{
+class GongchaItem extends Component{
     static defaultProps = {
       name : 'No Name',
       price : 'No Price',
@@ -81,7 +81,14 @@ class GongchaList extends Component{
                 price : '4.8',
                 pic: {img6}
             }
-        ]
+        ];
+        return(
+            <div>
+                {
+                    contacts.map(contact => <GongchaItem/>)
+                }
+            </div>
+        )
     }
 
 }
