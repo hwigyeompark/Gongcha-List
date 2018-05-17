@@ -85,11 +85,10 @@ class GongchaList extends Component{
         return(
             <div>
                 {
-                    contacts.map(contact => <GongchaItem/>)
+                    contacts.map(contact => <GongchaItem name={contact.name} price={contact.price} pic={contact.pic}/>)
                 }
             </div>
         )
     }
-
 }
 export default GongchaList;
